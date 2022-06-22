@@ -1,0 +1,16 @@
+{
+    "Nombre": "DrexBot",
+    "versiones":{
+        "bot": "0.0.6",
+        "animales":{
+            "dog":"0.0.2",
+            "cat":"0.0.2"
+        },
+        "nasa":"0.0.3",
+        "pokedex":"0.0.3",
+        "traductor":"Beta 0.0.0.3",
+        "openai":{
+            "codex":"Beta 0.0.01"
+        }
+    }
+}
