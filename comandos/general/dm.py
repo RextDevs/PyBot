@@ -13,7 +13,7 @@ class mensajes(commands.Cog):
 
     @commands.command()
     async def dm(self,ctx,member:discord.Member):
-        await ctx.send("Que desea decir?")
+        await ctx.send("Que le desea decir?")
         def check(m):
             return m.author.id == ctx.author.id
         message = await self.bot.wait_for('message',check=check)

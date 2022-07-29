@@ -6,15 +6,17 @@ from discord.utils import get
 import datetime
 import requests, json
 from random import randint
+
 def versiones():
     with open("config.json","r") as j:
         datos=json.load(j)
         return datos
+
 class pokedex(commands.Cog):
     def __init__(self, bot):
         self.bot= bot
     @commands.command()
-    async def pokemon(self,ctx, codigo: str=None):
+    async def pokedex(self,ctx, codigo: str=None):
         version=versiones()
         if not codigo:
             await ctx.send("Pokemon no encontrado, enseñando uno random")
