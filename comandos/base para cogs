@@ -1,4 +1,5 @@
 import discord
+from discord import app_commands
 import asyncio
 from discord.ext import commands
 
@@ -9,8 +10,11 @@ class TestCog(commands.Cog):
     @commands.command()
     async def est(self,ctx):
         await ctx.send("Comando en desarrollo")
-        
+    
+    @app_commands.command(name="test", description="Comando en desarrollo")
+    async def test(self, interaction: discord.Interaction) -> None:
+        await interaction.response.send_message("Comando en desarrollo", ephemeral=True)        
 
 
-def setup(bot):
-    bot.add_cog(TestCog(bot))
+async def setup(bot):
+    await bot.add_cog(TestCog(bot))

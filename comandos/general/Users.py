@@ -1,19 +1,18 @@
-import time
-import os
 import discord
 from discord.ext import commands
 from discord.utils import get
 from datetime import datetime
-import requests, json
 from random import randint
-class UserInfo(commands.Cog):
+from discord import app_commands
+class Users(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-    @commands.command(aliases=["whois", "ui"])
-    async def userinfo(self, ctx, member:discord.Member=None):
+    @app_commands.command(name="userinfo", description="Informacion de un usuario")
+    @commands.bot_has_permissions(embed_links=True)
+    async def userinfo(self, interaction:discord.Interaction, member:discord.Member=None):
         roles = []
         if not member:
-            member = ctx.author
+            member = interaction.user
         for role in member.roles:
             roles.append(str(role.mention))
         roles.reverse()
@@ -28,17 +27,18 @@ class UserInfo(commands.Cog):
         else:
             embed.add_field(name=f"Roles [{len(member.roles)}]", value=" | ".join(roles))
         embed.add_field(name="Color", value=str(member.color))
-        embed.set_thumbnail(url=member.avatar_url)
-        await ctx.send(embed=embed)
+        embed.set_thumbnail(url=member.avatar)
+        await interaction.response.send_message(embed=embed)
     
-    @commands.command()
-    async def avatar(self, ctx, member:discord.Member=None):
+    @app_commands.command(name="avatar", description="Avatar de un usuario")
+    @commands.bot_has_permissions(embed_links=True)
+    async def avatar(self, interaction:discord.Interaction, member:discord.Member=None):
         roles = []
         if not member:
-            member = ctx.author
+            member = interaction.user
         embed = discord.Embed(title=f"Avatar de {member}")
-        embed.set_image(url=member.avatar_url)
-        await ctx.send(embed=embed)
+        embed.set_image(url=member.avatar)
+        await interaction.response.send_message(embed=embed)
 		
-def setup(bot):
-	bot.add_cog(UserInfo(bot))
+async def setup(bot):
+	await bot.add_cog(Users(bot))

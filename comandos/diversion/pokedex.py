@@ -1,6 +1,7 @@
 import time
 import os
 import discord
+from discord import app_commands
 from discord.ext import commands
 from discord.utils import get
 import datetime
@@ -15,18 +16,21 @@ def versiones():
 class pokedex(commands.Cog):
     def __init__(self, bot):
         self.bot= bot
-    @commands.command()
-    async def pokedex(self,ctx, codigo: str=None):
+
+    @app_commands.command(name="pokedex", description="Muestra la información de un pokemon")
+    #@commands.command() #Comentado por futura eliminacion
+    @commands.bot_has_permissions(embed_links=True)
+    async def pokedex(self, interaction:discord.Interaction, codigo: str) -> None:
         version=versiones()
         if not codigo:
-            await ctx.send("Pokemon no encontrado, enseñando uno random")
+            await interaction.response.send_message("Pokemon no encontrado, enseñando uno random")
             codigo=randint(1,850)
         url = 'http://pokeapi.co/api/v2/pokemon/'
         peticion = requests.get(url+str(codigo))
         #no encontrado
         if str(peticion)=="<Response [404]>":
-            await ctx.send(str(peticion))
-            await ctx.send("Pokemon no encontrado, enseñando uno random")
+            await interaction.response.send_message(str(peticion))
+            await interaction.response.send_message("Pokemon no encontrado, enseñando uno random")
             codigo=randint(1,850)
             peticion = requests.get(url+str(codigo))
         respuesta = json.loads(peticion.content)
@@ -50,8 +54,8 @@ class pokedex(commands.Cog):
             juegoss=juegoss+ str(f"{juegos['version']['name']}, ")
         embed.add_field(name='Juegos:"', value=f"{juegoss}")
         embed.set_thumbnail(url=f"{respuesta['sprites']['front_default']}")
-        await ctx.send(embed=embed)
+        await interaction.response.send_message(embed=embed)
         #await ctx.send(respuesta['sprites']['other']['official-artwork']['front_default'])
 
-def setup(bot):
-    bot.add_cog(pokedex(bot))
+async def setup(bot):
+    await bot.add_cog(pokedex(bot))

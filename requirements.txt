@@ -1,0 +1,7 @@
+discord.py
+tqdm
+python-dotenv
+openai
+deep_translator
+langdetect
+fastapi[all]

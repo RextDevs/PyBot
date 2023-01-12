@@ -1,5 +1,19 @@
 {
     "versiones":{
-        "bot": "0.1.0 (beta)"
+        "bot": "1.10.0--Updating to 2.0",
+        "animales":{
+            "dog":"1.0.0",
+            "cat":"1.0.0",
+            "capybara":"1.0.1"
+        },
+        "nasa":"1.0.0",
+        "pokedex":"1.0.0",
+        "traductor":"Beta 1.0.0",
+        "openai":{
+            "codex":"Beta 0.0.1"
+        },
+        "minecraft":"0.0.3 Alpha",
+        "recordatorio":"0.0.1",
+        "reportbug":"0.0.1"
     }
 }

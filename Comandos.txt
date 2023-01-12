@@ -1,0 +1,9 @@
+#Primer vez que se ejecuta el bot
+python -m venv dcbot
+dcbot\Scripts\activate.bat
+python3 install -r requirements.txt
+python3 main.py
+
+#Cada vez que se quiera ejecutar el bot
+dcbot\Scripts\activate.bat
+python3 main.py

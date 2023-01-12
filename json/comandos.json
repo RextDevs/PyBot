@@ -1,0 +1,313 @@
+{
+    "carpetas": {
+        "ai": {
+            "path": "./comandos/ai",
+            "nombre": "ai",
+            "descripcion": "Modulo de inteligencia Artificial",
+            "comandos": {
+                "admin": "admin",
+                "Administracion del modulo de Inteligencia Artificial": "Administracion del modulo de Inteligencia Artificial",
+                "1": 1,
+                "codex": "codex",
+                "Modulo codex para AI": "Modulo codex para AI",
+                "2": 2,
+                "registro": "registro",
+                "Registrar usuario en el modulo de AI": "Registrar usuario en el modulo de AI",
+                "3": 3,
+                "texto": "texto",
+                "Modulo ChatBot con AI": "Modulo ChatBot con AI",
+                "4": 4,
+                "tokens": "tokens",
+                "Ver tokens en el modulo AI": "Ver tokens en el modulo AI",
+                "5": 5
+            }
+        },
+        "dev": {
+            "path": "./comandos/dev",
+            "nombre": "dev",
+            "descripcion": "developer",
+            "comandos": {
+                "actualizar": "actualizar",
+                "developer": "developer",
+                "6": 6,
+                "openai": "openai",
+                "7": 7
+            }
+        },
+        "diversion": {
+            "path": "./comandos/diversion",
+            "nombre": "diversion",
+            "descripcion": "Cosas entretenidas",
+            "comandos": {
+                "animales": "animales",
+                "Muestra Imagenes de animales": "Muestra Imagenes de animales",
+                "8": 8,
+                "nasa": "nasa",
+                "Muestra imagenes de la nasa": "Muestra imagenes de la nasa",
+                "9": 9
+            }
+        },
+        "general": {
+            "path": "./comandos/general",
+            "nombre": "general",
+            "descripcion": "Comandos utiles",
+            "comandos": {
+                "dm": "dm",
+                "Manda mensajes directos a un usuario": "Manda mensajes directos a un usuario",
+                "10": 10,
+                "help": "help",
+                "Obten ayuda sobre todos los comandos": "Obten ayuda sobre todos los comandos",
+                "11": 11,
+                "informacion": "informacion",
+                "Te da informacion sobre el servidor": "Te da informacion sobre el servidor",
+                "12": 12,
+                "recordatorios": "recordatorios",
+                "Activa recordatorios": "Activa recordatorios",
+                "13": 13,
+                "traductor": "traductor",
+                "Traduce textos": "Traduce textos",
+                "14": 14,
+                "Users": "Users",
+                "Informacion sobre los usuarios": "Informacion sobre los usuarios",
+                "15": 15
+            }
+        },
+        "mod": {
+            "path": "./comandos/mod",
+            "nombre": "mod",
+            "descripcion": "Comandos para moderadores",
+            "comandos": {
+                "extensiones": "extensiones",
+                "Actualizar extensiones": "Actualizar extensiones",
+                "16": 16
+            }
+        },
+        "musica": {
+            "path": "./comandos/musica",
+            "nombre": "musica",
+            "descripcion": "Testing",
+            "comandos": {
+                "musica_conect": "musica_conect",
+                "Testing": "Testing",
+                "17": 17
+            }
+        },
+        "owner": {
+            "path": "./comandos/owner",
+            "nombre": "owner",
+            "descripcion": "Cosas del due\u00f1o",
+            "comandos": {
+                "comandos": "comandos",
+                "Ver comandos de due\u00f1o": "Ver comandos de due\u00f1o",
+                "18": 18,
+                "servidores": "servidores",
+                "Ver servidores": "Ver servidores",
+                "19": 19
+            }
+        },
+        "ver donde moverlos": {
+            "path": "./comandos/ver donde moverlos",
+            "nombre": "ver donde moverlos",
+            "descripcion": "a",
+            "comandos": {
+                "minecraftsrv": "minecraftsrv",
+                "ignorar": "ignorar",
+                "20": 20,
+                "pokedex": "pokedex",
+                "a": "a",
+                "21": 21,
+                "prueba": "prueba",
+                "22": 22,
+                "reportbug": "reportbug",
+                "23": 23,
+                "traduccion": "traduccion",
+                "24": 24,
+                "uso": "uso",
+                "25": 25
+            }
+        },
+        "__pycache__": {
+            "path": "./comandos/__pycache__",
+            "nombre": "__pycache__",
+            "descripcion": "a",
+            "comandos": {}
+        }
+    },
+    "comandos": {
+        "1": {
+            "nombre": "admin",
+            "path": "./comandos/ai/admin.py",
+            "path_comando": "ai.admin",
+            "id": 1,
+            "descripcion": "Administracion del modulo de Inteligencia Artificial"
+        },
+        "2": {
+            "nombre": "codex",
+            "path": "./comandos/ai/codex.py",
+            "path_comando": "ai.codex",
+            "id": 2,
+            "descripcion": "Modulo codex para AI"
+        },
+        "3": {
+            "nombre": "registro",
+            "path": "./comandos/ai/registro.py",
+            "path_comando": "ai.registro",
+            "id": 3,
+            "descripcion": "Registrar usuario en el modulo de AI"
+        },
+        "4": {
+            "nombre": "texto",
+            "path": "./comandos/ai/texto.py",
+            "path_comando": "ai.texto",
+            "id": 4,
+            "descripcion": "Modulo ChatBot con AI"
+        },
+        "5": {
+            "nombre": "tokens",
+            "path": "./comandos/ai/tokens.py",
+            "path_comando": "ai.tokens",
+            "id": 5,
+            "descripcion": "Ver tokens en el modulo AI"
+        },
+        "6": {
+            "nombre": "actualizar",
+            "path": "./comandos/dev/actualizar.py",
+            "path_comando": "dev.actualizar",
+            "id": 6,
+            "descripcion": "developer"
+        },
+        "7": {
+            "nombre": "openai",
+            "path": "./comandos/dev/openai.py",
+            "path_comando": "dev.openai",
+            "id": 7,
+            "descripcion": "developer"
+        },
+        "8": {
+            "nombre": "animales",
+            "path": "./comandos/diversion/animales.py",
+            "path_comando": "diversion.animales",
+            "id": 8,
+            "descripcion": "Muestra Imagenes de animales"
+        },
+        "9": {
+            "nombre": "nasa",
+            "path": "./comandos/diversion/nasa.py",
+            "path_comando": "diversion.nasa",
+            "id": 9,
+            "descripcion": "Muestra imagenes de la nasa"
+        },
+        "10": {
+            "nombre": "dm",
+            "path": "./comandos/general/dm.py",
+            "path_comando": "general.dm",
+            "id": 10,
+            "descripcion": "Manda mensajes directos a un usuario"
+        },
+        "11": {
+            "nombre": "help",
+            "path": "./comandos/general/help.py",
+            "path_comando": "general.help",
+            "id": 11,
+            "descripcion": "Obten ayuda sobre todos los comandos"
+        },
+        "12": {
+            "nombre": "informacion",
+            "path": "./comandos/general/informacion.py",
+            "path_comando": "general.informacion",
+            "id": 12,
+            "descripcion": "Te da informacion sobre el servidor"
+        },
+        "13": {
+            "nombre": "recordatorios",
+            "path": "./comandos/general/recordatorios.py",
+            "path_comando": "general.recordatorios",
+            "id": 13,
+            "descripcion": "Activa recordatorios"
+        },
+        "14": {
+            "nombre": "traductor",
+            "path": "./comandos/general/traductor.py",
+            "path_comando": "general.traductor",
+            "id": 14,
+            "descripcion": "Traduce textos"
+        },
+        "15": {
+            "nombre": "Users",
+            "path": "./comandos/general/Users.py",
+            "path_comando": "general.Users",
+            "id": 15,
+            "descripcion": "Informacion sobre los usuarios"
+        },
+        "16": {
+            "nombre": "extensiones",
+            "path": "./comandos/mod/extensiones.py",
+            "path_comando": "mod.extensiones",
+            "id": 16,
+            "descripcion": "Actualizar extensiones"
+        },
+        "17": {
+            "nombre": "musica_conect",
+            "path": "./comandos/musica/musica_conect.py",
+            "path_comando": "musica.musica_conect",
+            "id": 17,
+            "descripcion": "Testing"
+        },
+        "18": {
+            "nombre": "comandos",
+            "path": "./comandos/owner/comandos.py",
+            "path_comando": "owner.comandos",
+            "id": 18,
+            "descripcion": "Ver comandos de due\u00f1o"
+        },
+        "19": {
+            "nombre": "servidores",
+            "path": "./comandos/owner/servidores.py",
+            "path_comando": "owner.servidores",
+            "id": 19,
+            "descripcion": "Ver servidores"
+        },
+        "20": {
+            "nombre": "minecraftsrv",
+            "path": "./comandos/ver donde moverlos/minecraftsrv.py",
+            "path_comando": "ver donde moverlos.minecraftsrv",
+            "id": 20,
+            "descripcion": "ignorar"
+        },
+        "21": {
+            "nombre": "pokedex",
+            "path": "./comandos/ver donde moverlos/pokedex.py",
+            "path_comando": "ver donde moverlos.pokedex",
+            "id": 21,
+            "descripcion": "a"
+        },
+        "22": {
+            "nombre": "prueba",
+            "path": "./comandos/ver donde moverlos/prueba.py",
+            "path_comando": "ver donde moverlos.prueba",
+            "id": 22,
+            "descripcion": "a"
+        },
+        "23": {
+            "nombre": "reportbug",
+            "path": "./comandos/ver donde moverlos/reportbug.py",
+            "path_comando": "ver donde moverlos.reportbug",
+            "id": 23,
+            "descripcion": "a"
+        },
+        "24": {
+            "nombre": "traduccion",
+            "path": "./comandos/ver donde moverlos/traduccion.py",
+            "path_comando": "ver donde moverlos.traduccion",
+            "id": 24,
+            "descripcion": "a"
+        },
+        "25": {
+            "nombre": "uso",
+            "path": "./comandos/ver donde moverlos/uso.py",
+            "path_comando": "ver donde moverlos.uso",
+            "id": 25,
+            "descripcion": "a"
+        }
+    }
+}
