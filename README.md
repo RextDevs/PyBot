@@ -79,17 +79,6 @@ Asegúrate que tengas instalado en tu equipo:
 ```sh
 git clone https://github.com/RextPro/pybot
 ```
-3. Crea un entorno virtual en la misma carpeta.
-
-```sh
-python3 -m venv bot-venv
-```
-
-4. Inicia el script
-Windows:
-```sh
-bot-venv\Scripts\activate.bat
-```
 
 3. Instala los paquetes requeridos
 
@@ -97,7 +86,7 @@ bot-venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
 
-4. Introduce las API en `.env`
+4. Introduce las API en el archivo `.env`
 
 ```python
 TOKEN = 'ENTER YOUR API'
@@ -107,9 +96,11 @@ TOKEN = 'ENTER YOUR API'
 
 ```
 CLIENTE=ID DEL BOT
-
 ```
-
+6. Introduce tu ID de discord en el archivo `.env`
+```
+OWNER=TUID
+```
 
 ## Usage
 
